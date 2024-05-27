@@ -1,0 +1,30 @@
+﻿.loader {
+
+    width: 80px;
+    height: 100px;
+    background-image: url('/imgs/logougb.png');
+    background-size: cover;
+    animation: pulse 0.8s infinite alternate;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+#loadingProcesso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgb(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
